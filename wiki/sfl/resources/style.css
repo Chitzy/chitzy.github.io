@@ -1,0 +1,560 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+    min-width: 1200px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: #FFF;
+	background: url('bg.png');
+	background-repeat: no-repeat;
+	background-color: #FFF;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-position: center;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+#menu {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-color: #DDD;
+    overflow: hidden;
+    border-bottom: 2px solid #222;
+}
+
+#menu-logo {
+    display: inline-block;
+    float: left;
+    height: 50px;
+    vertical-align: middle;
+    font-family: "OpenSansBold";
+    font-size: 20px;
+    line-height: 50px;
+    color: #555;
+    margin-left: 100px;
+}
+
+#menu-items {
+    display: inline-block;
+    float: right;
+    height: 30px;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.menu-item {
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+    font-family: "OpenSansBold";
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+    padding-right: 30px;
+}
+
+.menu-icon {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.menu-del {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: #999;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    background: url('logo.png');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #333;
+    overflow: hidden;
+}
+
+#header-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(20, 20, 20, 0.2);
+}
+
+#header-title {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+    font-family: "OpenSansBold";
+    font-size: 40px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 0 3px #000;
+}
+
+.hightlight {
+    display: inline;
+    color: #3CA6C9;
+}
+
+#header-line {
+    position: relative;
+    width: 500px;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+#header-subtitle {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    font-family: "OpenSansLight";
+    font-size: 20px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 0 3px #000;
+}
+
+#info {
+    display: block;
+    width: 100%;
+    background-color: #DDD;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+#youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#info-box {
+    display: block;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: justify;
+    font-size: 0;
+}
+
+#info-box:after {
+    display: inline-block;
+    width: 100%;
+    content: '';
+}
+
+.info-smallbox {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+#info-title {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "OpenSansBold";
+    font-size: 30px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 0 1px #000;
+}
+
+#info-line {
+    position: relative;
+    width: 800px;
+    height: 2px;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(150, 150, 150, 1), rgba(0, 0, 0, 0));
+}
+
+#info-subtitle {
+    display: block;
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-family: "OpenSansLight";
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+}
+
+.info-icon {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-text {
+    display: block;
+    width: 60%;
+    text-align: center;
+    font-family: "OpenSansBold";
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0 0 1px #000;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.info-desc {
+    display: block;
+    width: 60%;
+    text-align: center;
+    font-family: "OpenSansLight";
+    font-size: 15px;
+    color: #555;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#crafting {
+    display: block;
+    width: 100%;
+    background-color: #3CA6C9;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+#crafting-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "OpenSansBold";
+    font-size: 30px;
+    color: #FFF;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#crafting-line {
+    position: relative;
+    width: 700px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+
+#crafting-box {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: justify;
+    font-size: 0;
+}
+
+#crafting-box:after {
+    display: inline-block;
+    width: 100%;
+    content: '';
+}
+
+.crafting-smallbox {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    vertical-align: top;
+    border: 5px solid #FFF;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    border-radius: 15%;
+    background-color: #AAA;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: center;
+}
+
+.crafting-smallbox:before{
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+}
+
+.crafting-subtext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "OpenSansLight";
+    font-size: 18px;
+    color: #FFF;
+    text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 47%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#download {
+    display: block;
+    width: 100%;
+    background-color: #e74c3c;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+#download-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "OpenSansBold";
+    font-size: 30px;
+    color: #FFF;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#download-line {
+    position: relative;
+    width: 700px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+#download-button {
+    display: block;
+    width: 450px;
+    height: 110px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #FFF;
+    box-sizing: border-box;
+    background-image: url('download.png');
+    background-size: auto 70%;
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    padding-left: 80px;
+    padding-top: 20px;
+    font-family: "OpenSansBold";
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#download-line2 {
+    position: relative;
+    width: 300px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+#download-text {
+    display: block;
+    width: 100%;
+    font-family: "OpenSansLight";
+    font-size: 13px;
+    color: #DDD;
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+}
+
+#download-changelog {
+    margin-top: 30px;
+    display: block;
+    padding: 30px;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.25);
+    font-family: "OpenSansBold";
+    font-size: 16px;
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download-changes {
+    font-family: "OpenSansLight";
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.hightlight2 {
+    color: #36CDFF;
+}
+
+#wikipage {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding: 50px;
+    border-top: 5px solid #3CA6C9;
+    border-bottom: 5px solid #3CA6C9;
+    background-color: #DDD;
+}
+
+#wikipage p {
+    font-family: "OpenSansLight";
+    font-size: 16px;
+    color: #555;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-family: "OpenSansBold";
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0 0 1px #000;
+}
+
+h2 {
+    display: block;
+    text-align: left;
+    font-family: "OpenSansBold";
+    font-size: 25px;
+    color: #FFF;
+    text-shadow: 0 0 1px #000;
+}
+
+.line {
+    position: relative;
+    width: 70%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.clear { style="clear: both;" }
+
+.wikiimg {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wikicraft {
+    display: inline-block;
+    float: right;
+    margin: 20px;
+}
+
+
+#footer {
+    width: 100%;
+    height: 70px;
+    background-color: #222;
+    border-top: 3px solid #FFF;
+    font-family: "OpenSansLight";
+    color: #DDD;
+    font-size: 14px;
+    text-align: center;
+    line-height: 70px;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('opensanslight-webfont.eot');
+    src: url('opensanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensanslight-webfont.woff2') format('woff2'),
+         url('opensanslight-webfont.woff') format('woff'),
+         url('opensanslight-webfont.ttf') format('truetype'),
+         url('opensanslight-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('opensansbold-webfont.eot');
+    src: url('opensansbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensansbold-webfont.woff2') format('woff2'),
+         url('opensansbold-webfont.woff') format('woff'),
+         url('opensansbold-webfont.ttf') format('truetype'),
+         url('opensansbold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

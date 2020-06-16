@@ -1,0 +1,137 @@
+:root {
+    --color-accent: #abdcfc;
+    --color-table: #053354;
+    --color-background: #121d30;
+
+    --text-main: #FFF;
+    --text-second: #AAA;
+
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: var(--color-background);
+    font-family: "Viga";
+    color: var(--text-main);
+    font-weight: 100;
+}
+
+img#logo {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#group-list, #download-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title h2 {
+    color: var(--color-accent);
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    border-bottom: 5px solid var(--color-accent);
+}
+
+.table-container {
+    border: 2px solid var(--color-table);
+
+}
+
+@media screen and (max-width: 992px) {
+    .group .table-row:not(.table-head) {
+        border: 1px solid var(--text-second); 
+        border-bottom: 0;
+    }
+  }
+
+.table-row > div {
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid var(--color-table);
+}
+
+span.darker {
+    color: var(--text-second);
+}
+
+.table-row a {
+    color: #FFF;
+}
+
+.table-row a:hover {
+    text-decoration: none;
+}
+
+.table-head > div {
+    background-color: var(--color-table);
+}
+
+.download-button > span {
+    cursor: pointer;
+}
+
+#download-back-button {
+    padding-bottom: 0.7em;
+}
+
+#download-back-button > span {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0.2em 0.5em;
+    background-color: var(--color-table);
+    cursor: pointer;
+}
+
+/* --------------------- FONTS --------------------- */
+
+@font-face {
+    font-family: 'Viga';
+    src: url(fonts/viga.ttf);
+}
+
+@font-face {
+    font-family: 'icons';
+    src:  url('fonts/icons.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+[class^="icon-"], [class*=" icon-"] {
+    vertical-align: middle !important;
+    font-family: 'icons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-download:before {
+    content: "\e901";
+}
+.icon-info:before {
+    content: "\ea0c";
+}
+.icon-back:before {
+    content: "\ea40";
+}
+.icon-youtube:before {
+    content: "\ea9d";
+}
+  
+  
