@@ -5,6 +5,7 @@
 
     --text-main: #FFF;
     --text-second: #AAA;
+    --text-dark: #111;
 
 }
 
@@ -45,15 +46,7 @@ img#logo {
 
 .table-container {
     border: 2px solid var(--color-table);
-
 }
-
-@media screen and (max-width: 992px) {
-    .group .table-row:not(.table-head) {
-        border: 1px solid var(--text-second); 
-        border-bottom: 0;
-    }
-  }
 
 .table-row > div {
     font-size: 1em;
@@ -74,7 +67,7 @@ span.darker {
     text-decoration: none;
 }
 
-.table-head > div {
+.table-head {
     background-color: var(--color-table);
 }
 
@@ -92,6 +85,32 @@ span.darker {
     padding: 0.2em 0.5em;
     background-color: var(--color-table);
     cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+
+    .title h2 {
+        border: 0;
+    }
+
+    .table-container {
+        border: 0;
+    }
+
+    .table-row {
+        margin: 2em 0;
+        background-color: var(--color-table);
+    }
+
+    .table-head {
+        margin: 0;
+        background-color: var(--color-accent);
+        color: var(--text-dark);
+    }
+
+    .table-row > div {
+        border-color: var(--color-background);
+    }
 }
 
 /* --------------------- FONTS --------------------- */
